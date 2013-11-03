@@ -30,7 +30,7 @@
 
 \ifthenelse{\equal{\myaddress}{office}}{%
   \address{Lorem Ipsum Dolor APT sit
- Austin, TX 12345.}
+    Austin, TX 12345.}
 }{%
   \address{Foo Bar Madison, WI 53718}
 }
@@ -42,9 +42,9 @@
 %{http://tempor.incididunt.ut.labore/et/dolore}}
 
 \ifthenelse{\equal{\myaddress}{office}}{%
-%  \address{3500 Greystone Dr APT 204
+  %  \address{3500 Greystone Dr APT 204
   \address{7600-C N. Capital of Tx Hwy STE 300
-  Austin, TX 78731}
+    Austin, TX 78731}
 }{%
   \address{blahblahblah}
 }
@@ -70,193 +70,194 @@
 \section*{Objective}
 %\vspace{-3pt}
 \begin{list1}
-	\item I want to work with smart people on a great team making awesome things
+\item I want to work with smart people on a great team making awesome things
 \end{list1}
 
 %\vspace{-3pt}
 \section*{Experience}
 %\vspace{-3pt}
+
 \begin{list1}
-	\item \begin{tabular1bold} Student, Hacker School; New York, NY & Spring 2013 \end{tabular1bold}
-\vspace{-8pt}  %not sure why this is only needed for this one list item
-     \begin{list2}
-         \item Implemented channels and coroutines, using setjmp/longjmp\footnote{\href{https://github.com/danluu/setjmp-longjmp-ucontext-snippets}{https://github.com/danluu/setjmp-longjmp-ucontext-snippets}} \hfill \emph{C} 
-         \item Created an actor based BitTorrent client, using akka\footnote{\href{https://github.com/danluu/storrent}{https://github.com/danluu/storrent}}             \hfill \emph{Scala}
-         \item Contributed to reverse engineering jslinux\footnote{\href{https://github.com/levskaya/jslinux-deobfuscated}{https://github.com/levskaya/jslinux-deobfuscated}}\footnote{\href{http://bellard.org/jslinux/}{http://bellard.org/jslinux/}}    \hfill \emph {JavaScript}
-         \item Co-writing parser combinator library\footnote{\href{https://github.com/astrieanna/juliaparsec}{https://github.com/astrieanna/juliaparsec}}  \hfill \emph{Julia}
-         \item Miscellaneous other open source contributions\footnote{\href{https://github.com/JuliaLang/julia}{https://github.com/JuliaLang/julia}}\footnote{\href{https://github.com/mozilla/rust}{https://github.com/mozilla/rust}} \hfill \emph {Rust, Julia, Scala, etc.}
-\end{list2}
+\item \begin{tabular1bold} Student, Hacker School; New York, NY & Spring 2013 \end{tabular1bold}
+  \vspace{-8pt}  %not sure why this is only needed for this one list item
+  \begin{list2}
+  \item Implemented channels and coroutines, using setjmp/longjmp\footnote{\href{https://github.com/danluu/setjmp-longjmp-ucontext-snippets}{https://github.com/danluu/setjmp-longjmp-ucontext-snippets}} \hfill \emph{C} 
+  \item Created an actor based BitTorrent client, using akka\footnote{\href{https://github.com/danluu/storrent}{https://github.com/danluu/storrent}}             \hfill \emph{Scala}
+  \item Contributed to reverse engineering jslinux\footnote{\href{https://github.com/levskaya/jslinux-deobfuscated}{https://github.com/levskaya/jslinux-deobfuscated}}\footnote{\href{http://bellard.org/jslinux/}{http://bellard.org/jslinux/}}    \hfill \emph {JavaScript}
+  \item Co-writing parser combinator library\footnote{\href{https://github.com/astrieanna/juliaparsec}{https://github.com/astrieanna/juliaparsec}}  \hfill \emph{Julia}
+  \item Miscellaneous other open source contributions\footnote{\href{https://github.com/JuliaLang/julia}{https://github.com/JuliaLang/julia}}\footnote{\href{https://github.com/mozilla/rust}{https://github.com/mozilla/rust}} \hfill \emph {Rust, Julia, Scala, etc.}
+  \end{list2}
 
-    \item \begin{tabular1bold} Member of Technical Staff, Centaur Technology (acquired by VIA); Austin, TX & 2005 -- 2013 \end{tabular1bold}
-\vspace{-8pt}
-%\begin{adjustwidth}{1.5em}{1.5em}
-        \begin{list2}
-            \item The following is a typical six-month project (substituting a different ISA in our x86 processor):
-                   \begin{list3}
-                        \item Created architectural simulator and got Linux running on it\hfill \emph{C}
-                        \item Implemented \nicefrac{1}{2} of the translator, and wrote associated microcode \hfill \emph{Internal templating language}
-                        \item Helped reversed engineer the ISA
-                        \item Created test generator that found 90\% of the first 1000 bugs on the project \hfill \emph{F\#}
-                    \end{list3}
-             \item Other roles included formal verification, adding fault tolerance to a distributed system, post-silicon debug, test tooling, etc.
+\item \begin{tabular1bold} Member of Technical Staff, Centaur Technology (acquired by VIA); Austin, TX & 2005 -- 2013 \end{tabular1bold}
+  \vspace{-8pt}
+  %\begin{adjustwidth}{1.5em}{1.5em}
+  \begin{list2}
+  \item The following is a typical six-month project (substituting a different ISA in our x86 processor):
+    \begin{list3}
+    \item Created architectural simulator and got Linux running on it\hfill \emph{C}
+    \item Implemented \nicefrac{1}{2} of the translator, and wrote associated microcode \hfill \emph{Internal templating language}
+    \item Helped reversed engineer the ISA
+    \item Created test generator that found 90\% of the first 1000 bugs on the project \hfill \emph{F\#}
+    \end{list3}
+  \item Other roles included formal verification, adding fault tolerance to a distributed system, post-silicon debug, test tooling, etc.
     
+    
+    %	\begin{list2}
+    %% I often worked on new and experimental projects, which means that I was exposed to everything under the sun, but I can't talk about anything too recent.
+
+    %% A few projects ago, we were experimenting with adding a front-end for another instruction set to our processor. Over the course of six months, I helped reverse engineer the ISA, created the architectural simulator, picked apart Linux (Android) to make it work in the simulator, wrote RTL for about half of the translator, along with microcode for the microcoded instructions, and created the test generator that found the first 1000 bugs on the project. 
+
+    %% I was there for seven years, so there's no way to succinctly describe my responsibilities. I did everything from automated theorem proving for formal verification, to adding fault tolerance to a distributed system, to post-silicon lab debug.
+    %%            I do a bit of everything, which makes a traditional bulleted list intractably long. To give an idea of the breadth of tasks I'm used to, in my last project, I converted QEMU to a simulator used for verifying correctness and taking performance traces, wrote the test generator that was used to file the first 500 bugs on the project, implemented the SIMD and other data processing instructions in the translator, determined what should be implemented in new hardware vs. existing uops vs. microcode, and then directed the hardware implementation for new hardware, and implemented the translator and wrote the microcode for cases where new hardware wasn't needed. I was also involved in directing verification and characterization. Experience on previous projects includes the following:
+    %% %		\item Working on dynamic translation based instruction level and system simulator \hfill \emph{QEMU and C}
+    %% %		\item Working on service / management processor (and assembler) \hfill \emph{Verilog and C++}
+    %% 		\item Wrote microcode tools: code generator, test generator, etc. \hfill \emph{F\# (FParsec)}
+    %% 		\item Created JTAG / probe mode debugger (FPGA with USB connection) \hfill \emph{Verilog}
+    %% 		\item Worked on formal verification (mechanized theorem proving) \hfill \emph{ACL2 and Common Lisp}
+    %% 		\item Optimized compiled cycle-based simulator; 12x faster than Synopsis VCS on RTL \hfill \emph{C++ and x86 assembly}
+    %% 		\item Added fault tolerance to distributed computing system, increasing average uptime by 10x \hfill \emph{Ruby}
+    %% 		\item Owned SYSENTER, SYSEXIT, SYSCALL, and SYSRET instructions on VIA Nano 3000 \hfill \emph{microcode}
+    %% 		\item Increased throughput of distributed computing system by 50\% via statistical optimization \hfill \emph{R and Ruby}
+    %% 		\item Created self-checking post-silicon pseudo-random test generator \hfill \emph{ACL2 and x86 assembly}
+    %% 		\item Implemented SHA and AES in instruction-level simulator for new $\mu$architecture \hfill \emph{C++}
+    %% 		\item Wrote full-chip pre-silicon test generators; filed 1700 of 6500 bugs on VIA Nano \hfill \emph{x86 assembly and Ruby}
+    %% 		\item Ported parts of system model from Intel-compatible P4 bus to Via V4 bus \hfill \emph{Verilog}
+    %% 		\item Post-silicon bring-up, debug, and speedpath testing for VIA Nano and Nano 3000
+    %% 		\item Drove migration from perl (5.6) to Ruby in 2005
+  \end{list2}
+  %\end{adjustwidth}
+  %% 	\item \begin{tabular1bold} Research Assistant, University of Texas; Austin, TX & 2009 -- Present \end{tabular1bold}
+
+  %% 	\begin{list2}
+  %% %		\item Created fast algorithms for linear case of Fisher's market and generalizations of unit-demand auctions
+  %% 		\item Research comparing machine (bootstrap) learning and human learning\footnote{Evaluating Instructable Software Agents Using Human Generated Benchmarks, International Conference on Evaluation and Assessment in Software Engineering  2011}\footnote{Towards Evaluating Human-Instructable Software Agents, under submission to International Conference on Interfaces and Human Computer Interaction 2011} \hfill \emph{F\# and JavaScript (jQuery)}
+  %% 		\item Working on data mining and statistical analysis (2SLS) to find causal links for sources of bugs \hfill \emph{R}
+  %% 	\end{list2}
   
-%	\begin{list2}
-%% I often worked on new and experimental projects, which means that I was exposed to everything under the sun, but I can't talk about anything too recent.
+  %	\begin{list2}
+  %		\item Created fast algorithms for find equilibrium conditions
+  %	\end{list2}
 
-%% A few projects ago, we were experimenting with adding a front-end for another instruction set to our processor. Over the course of six months, I helped reverse engineer the ISA, created the architectural simulator, picked apart Linux (Android) to make it work in the simulator, wrote RTL for about half of the translator, along with microcode for the microcoded instructions, and created the test generator that found the first 1000 bugs on the project. 
+  %	\item \begin{tabular1bold} Research Assistant, University of Texas; Austin, TX & 2009 -- Present \end{tabular1bold}
+  %			  
+  %	\begin{list2}
+  %		\item Created fast algorithms for linear case of Fisher's market and various auction settings 
+  %	\end{list2}
+  %
+  %	\item
+  %	\begin{tabular1bold} Research Assistant, Empirical Software Engineering Laboratory; Austin, TX & 2009 -- Present \end{tabular1bold}
+  %
+  %	\begin{list2}
+  %		\item Applying data mining and statistical analysis to find causal links in engineering reliability data \hfill \emph {R}
+  %		\item Working on experimental design to compare automated (bootstrap) learning and human learning
+  %	\end{list2}
 
-%% I was there for seven years, so there's no way to succinctly describe my responsibilities. I did everything from automated theorem proving for formal verification, to adding fault tolerance to a distributed system, to post-silicon lab debug.
-%%            I do a bit of everything, which makes a traditional bulleted list intractably long. To give an idea of the breadth of tasks I'm used to, in my last project, I converted QEMU to a simulator used for verifying correctness and taking performance traces, wrote the test generator that was used to file the first 500 bugs on the project, implemented the SIMD and other data processing instructions in the translator, determined what should be implemented in new hardware vs. existing uops vs. microcode, and then directed the hardware implementation for new hardware, and implemented the translator and wrote the microcode for cases where new hardware wasn't needed. I was also involved in directing verification and characterization. Experience on previous projects includes the following:
-%% %		\item Working on dynamic translation based instruction level and system simulator \hfill \emph{QEMU and C}
-%% %		\item Working on service / management processor (and assembler) \hfill \emph{Verilog and C++}
-%% 		\item Wrote microcode tools: code generator, test generator, etc. \hfill \emph{F\# (FParsec)}
-%% 		\item Created JTAG / probe mode debugger (FPGA with USB connection) \hfill \emph{Verilog}
-%% 		\item Worked on formal verification (mechanized theorem proving) \hfill \emph{ACL2 and Common Lisp}
-%% 		\item Optimized compiled cycle-based simulator; 12x faster than Synopsis VCS on RTL \hfill \emph{C++ and x86 assembly}
-%% 		\item Added fault tolerance to distributed computing system, increasing average uptime by 10x \hfill \emph{Ruby}
-%% 		\item Owned SYSENTER, SYSEXIT, SYSCALL, and SYSRET instructions on VIA Nano 3000 \hfill \emph{microcode}
-%% 		\item Increased throughput of distributed computing system by 50\% via statistical optimization \hfill \emph{R and Ruby}
-%% 		\item Created self-checking post-silicon pseudo-random test generator \hfill \emph{ACL2 and x86 assembly}
-%% 		\item Implemented SHA and AES in instruction-level simulator for new $\mu$architecture \hfill \emph{C++}
-%% 		\item Wrote full-chip pre-silicon test generators; filed 1700 of 6500 bugs on VIA Nano \hfill \emph{x86 assembly and Ruby}
-%% 		\item Ported parts of system model from Intel-compatible P4 bus to Via V4 bus \hfill \emph{Verilog}
-%% 		\item Post-silicon bring-up, debug, and speedpath testing for VIA Nano and Nano 3000
-%% 		\item Drove migration from perl (5.6) to Ruby in 2005
-	\end{list2}
-%\end{adjustwidth}
-%% 	\item \begin{tabular1bold} Research Assistant, University of Texas; Austin, TX & 2009 -- Present \end{tabular1bold}
+\item \begin{tabular1bold} Research Assistant, Ultrafast Optics and Fiber Communications Lab; Lafayette, IN & 2003 -- 2005 \end{tabular1bold}
+  \begin{list2}
+  \item Sped up parallel (256 wavelength) polarimeter by 40x, from 50 Hz to 2 kHz \hfill \emph{MATLAB and C}
+  \item Designed and built Fourier transform spectroscopy interferometer \hfill \emph{MATLAB and C}
+  \end{list2}
 
-%% 	\begin{list2}
-%% %		\item Created fast algorithms for linear case of Fisher's market and generalizations of unit-demand auctions
-%% 		\item Research comparing machine (bootstrap) learning and human learning\footnote{Evaluating Instructable Software Agents Using Human Generated Benchmarks, International Conference on Evaluation and Assessment in Software Engineering  2011}\footnote{Towards Evaluating Human-Instructable Software Agents, under submission to International Conference on Interfaces and Human Computer Interaction 2011} \hfill \emph{F\# and JavaScript (jQuery)}
-%% 		\item Working on data mining and statistical analysis (2SLS) to find causal links for sources of bugs \hfill \emph{R}
-%% 	\end{list2}
-	
-%	\begin{list2}
-%		\item Created fast algorithms for find equilibrium conditions
-%	\end{list2}
+  %% \item \begin{tabular1bold} Teaching Assistant, Purdue University; West Lafayette, IN & 2004 -- 2005 \end{tabular1bold}
+  %% \begin{list2}
+  %% 	\item TA for two sections of Linear Circuit Analysis II and two sections of Electromagnetic Fields 
+  %% \end{list2}
 
-%	\item \begin{tabular1bold} Research Assistant, University of Texas; Austin, TX & 2009 -- Present \end{tabular1bold}
-%			  
-%	\begin{list2}
-%		\item Created fast algorithms for linear case of Fisher's market and various auction settings 
-%	\end{list2}
-%
-%	\item
-%	\begin{tabular1bold} Research Assistant, Empirical Software Engineering Laboratory; Austin, TX & 2009 -- Present \end{tabular1bold}
-%
-%	\begin{list2}
-%		\item Applying data mining and statistical analysis to find causal links in engineering reliability data \hfill \emph {R}
-%		\item Working on experimental design to compare automated (bootstrap) learning and human learning
-%	\end{list2}
+  %	\item
+  %	\begin{tabular1bold} Volunteer, Red Cross; West Lafayette, IN & 2003 -- 2004 
+  % \end{tabular1bold}
 
-	\item \begin{tabular1bold} Research Assistant, Ultrafast Optics and Fiber Communications Lab; Lafayette, IN & 2003 -- 2005 \end{tabular1bold}
-	\begin{list2}
-		\item Sped up parallel (256 wavelength) polarimeter by 40x, from 50 Hz to 2 kHz \hfill \emph{MATLAB and C}
-		\item Designed and built Fourier transform spectroscopy interferometer \hfill \emph{MATLAB and C}
-	\end{list2}
+\item \begin{tabular1bold} Intern, IBM; Austin, TX & Summer 2003 \end{tabular1bold}
+  \begin{list2}
+  \item Semi-formal / constrained random POWER6 completion unit functional verification \hfill \emph{VHDL}
+    %		\item Wrote testbenches that created reasonable instruction retirement patterns \hfill \emph{VHDL}
+  \end{list2}
 
-	%% \item \begin{tabular1bold} Teaching Assistant, Purdue University; West Lafayette, IN & 2004 -- 2005 \end{tabular1bold}
-	%% \begin{list2}
-	%% 	\item TA for two sections of Linear Circuit Analysis II and two sections of Electromagnetic Fields 
-	%% \end{list2}
-
-%	\item
-%	\begin{tabular1bold} Volunteer, Red Cross; West Lafayette, IN & 2003 -- 2004 
-% \end{tabular1bold}
-
-	\item \begin{tabular1bold} Intern, IBM; Austin, TX & Summer 2003 \end{tabular1bold}
-	\begin{list2}
-		\item Semi-formal / constrained random POWER6 completion unit functional verification \hfill \emph{VHDL}
-%		\item Wrote testbenches that created reasonable instruction retirement patterns \hfill \emph{VHDL}
-	\end{list2}
-
-%	\item \begin{tabular1bold} Research Assistant, VLSI Design and Design Automation Laboratory; Madison, WI & 2001 -- 2003 \end{tabular1bold}
-%	\begin{list2}
-%		\item Studied high level RLC interconnect modeling and optimization
-%		\item Studied effect of power gating and clock gating on microprocessor power consumption \hfill \emph{SimpleScalar (C++)}
-%	\end{list2}
+  %	\item \begin{tabular1bold} Research Assistant, VLSI Design and Design Automation Laboratory; Madison, WI & 2001 -- 2003 \end{tabular1bold}
+  %	\begin{list2}
+  %		\item Studied high level RLC interconnect modeling and optimization
+  %		\item Studied effect of power gating and clock gating on microprocessor power consumption \hfill \emph{SimpleScalar (C++)}
+  %	\end{list2}
 
 
-	\item \begin{tabular1bold} Intern, Micron Technology; Boise, ID & Summer 2002 \end{tabular1bold}
-	\begin{list2}
-		\item Engineering hipster: working on flash before it was cool \hfill \emph{Perl}
-	\end{list2}
-	\item \begin{tabular1bold} Research Assistant, Spatial Systems Research Laboratory; Madison, WI & 2001 \end{tabular1bold}
+\item \begin{tabular1bold} Intern, Micron Technology; Boise, ID & Summer 2002 \end{tabular1bold}
+  \begin{list2}
+  \item Engineering hipster: working on flash before it was cool \hfill \emph{Perl}
+  \end{list2}
+\item \begin{tabular1bold} Research Assistant, Spatial Systems Research Laboratory; Madison, WI & 2001 \end{tabular1bold}
 
-	\begin{list2}
-		\item Studied tilings and related combinatorial models, e.g., alternating sign matricies and square ice
-	%\item Presented findings at URS
-	\end{list2}
+  \begin{list2}
+  \item Studied tilings and related combinatorial models, e.g., alternating sign matricies and square ice
+    %\item Presented findings at URS
+  \end{list2}
 \end{list1}
 
 \section*{Education}
 %\vspace{-3pt}
 \begin{list1}
-%	\item
-%	\begin{list2}
-%	\item Selected Graduate Courses: Computer Architecture, Interconnect Modeling and Optimization, VLSI Design, Digital Logic Synthesis Algorithms, Computational and Statistical Learning Theory, Empirical Methods in Engineering, Matrix Theory, Error-Correcting Codes, Adv. Math for Engineers, Theory of Differential Equations, Algorithms
-%	\item Selected Upper Division Undergraduate Courses: CMOS VLSI Design, Testing and Design for Testability, Digital Systems Design and Synthesis, Databases, Combinatorics
-%	\end{list2}
-	\item
-	\begin{tabular1bold}Electrical and Computer Engineering & 2009 - Present \\
-	University of Texas, Austin, TX
-	\end{tabular1bold}
+  %	\item
+  %	\begin{list2}
+  %	\item Selected Graduate Courses: Computer Architecture, Interconnect Modeling and Optimization, VLSI Design, Digital Logic Synthesis Algorithms, Computational and Statistical Learning Theory, Empirical Methods in Engineering, Matrix Theory, Error-Correcting Codes, Adv. Math for Engineers, Theory of Differential Equations, Algorithms
+  %	\item Selected Upper Division Undergraduate Courses: CMOS VLSI Design, Testing and Design for Testability, Digital Systems Design and Synthesis, Databases, Combinatorics
+  %	\end{list2}
+\item
+  \begin{tabular1bold}Electrical and Computer Engineering & 2009 - Present \\
+    University of Texas, Austin, TX
+  \end{tabular1bold}
 
-\begin{adjustwidth}{1.5em}{1.5em}
-%	\begin{list2}
-  I'm enrolled mostly so that I can learn new things, just for a change of pace. I take the occasional course (Computational Learning Theory, Empirical Software Engineering, and Algorithms), and do a bit of research on the side (Algorithmic Game Theory, Empirical Studies in Software Engineering)\footnote{\href{Designing human benchmark experiments for testing software agents}{http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=\&arnumber=6083170}, Evaluation \& Assessment in Software Engineering (EASE 2011), }\footnote{\href{Towards Evaluating Human-Instructable Software Agents}{https://sites.google.com/site/deangelistech/publications/towards-evaluating-human-instructable-software-agents}, International Conference on Interfaces and Human Computer Interaction (ICIHCI 2011)}.
-\end{adjustwidth}
-	\begin{list2}
-	%\item \coltabone{Research}{Algorithmic Economics with Greg Plaxton and Empirical Studies in Software Engineering with Dewayne Perry. Also interested in Machine Learning and Learning Theory}
-	%\item \coltabone{Courses}{Theory: Computational and Statistical Learning Theory (currently taking Algorithms, auditing Complexity Theory)   
-	%             Other: Audited Software Evolution, taking Empirical Software Engineering and auditing Distributed Computing}
-	\item GPA: 4.0
-	\item GRE: 5.5/800/740 (analytical/math/verbal)
-	\end{list2}
+  \begin{adjustwidth}{1.5em}{1.5em}
+    %	\begin{list2}
+    I'm enrolled mostly so that I can learn new things, just for a change of pace. I take the occasional course (Computational Learning Theory, Empirical Software Engineering, and Algorithms), and do a bit of research on the side (Algorithmic Game Theory, Empirical Studies in Software Engineering)\footnote{\href{Designing human benchmark experiments for testing software agents}{http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=\&arnumber=6083170}, Evaluation \& Assessment in Software Engineering (EASE 2011), }\footnote{\href{Towards Evaluating Human-Instructable Software Agents}{https://sites.google.com/site/deangelistech/publications/towards-evaluating-human-instructable-software-agents}, International Conference on Interfaces and Human Computer Interaction (ICIHCI 2011)}.
+  \end{adjustwidth}
+  \begin{list2}
+    %\item \coltabone{Research}{Algorithmic Economics with Greg Plaxton and Empirical Studies in Software Engineering with Dewayne Perry. Also interested in Machine Learning and Learning Theory}
+    %\item \coltabone{Courses}{Theory: Computational and Statistical Learning Theory (currently taking Algorithms, auditing Complexity Theory)   
+    %             Other: Audited Software Evolution, taking Empirical Software Engineering and auditing Distributed Computing}
+  \item GPA: 4.0
+  \item GRE: 5.5/800/740 (analytical/math/verbal)
+  \end{list2}
 
-	\item
-	\begin{tabular1bold}M.S.E. Electrical and Computer Engineering & 2003 -- 2005 \\
-	Purdue University, West Lafayette, IN
-	\end{tabular1bold}
-	%\begin{minipage}
+\item
+  \begin{tabular1bold}M.S.E. Electrical and Computer Engineering & 2003 -- 2005 \\
+    Purdue University, West Lafayette, IN
+  \end{tabular1bold}
+  %\begin{minipage}
 
-	%\begin{list2}
-	% \item \coltabone{Thesis}{Electric Field Cross Correlation for Optical Devices}
-	%\end{list2}
-	%\begin{multicols}{2}
-	\begin{list2}
-	\item GPA: 3.86 (4.0 in MS courses)
-	\item GRE: 800/800/750 (analytical/math/verbal)
-	\end{list2}
-	%\end{multicols}
-	%
-	\item
-	\begin{tabular1bold}B.S. Math and B.S. Computer Engineering, with distinction & 2000 -- 2003 \\
-	University of Wisconsin, Madison, WI
-	\end{tabular1bold}
+  %\begin{list2}
+  % \item \coltabone{Thesis}{Electric Field Cross Correlation for Optical Devices}
+  %\end{list2}
+  %\begin{multicols}{2}
+  \begin{list2}
+  \item GPA: 3.86 (4.0 in MS courses)
+  \item GRE: 800/800/750 (analytical/math/verbal)
+  \end{list2}
+  %\end{multicols}
+  %
+\item
+  \begin{tabular1bold}B.S. Math and B.S. Computer Engineering, with distinction & 2000 -- 2003 \\
+    University of Wisconsin, Madison, WI
+  \end{tabular1bold}
 
-	\begin{list2}
-	%\item \coltabone{Grad Courses}{Combinatorics, Matrix Theory, Error-Correcting Codes, Computer Architecture, Microeconomics, Theory of Differential Equations, Modeling and Optimization, and Real Analysis}
-	\item GPA: 3.61 (4.0 in upper-division and graduate level ECE courses)
-	\end{list2}
+  \begin{list2}
+    %\item \coltabone{Grad Courses}{Combinatorics, Matrix Theory, Error-Correcting Codes, Computer Architecture, Microeconomics, Theory of Differential Equations, Modeling and Optimization, and Real Analysis}
+  \item GPA: 3.61 (4.0 in upper-division and graduate level ECE courses)
+  \end{list2}
 
 \end{list1}
 
 \section*{Non-work Projects}
 %\vspace{-3pt}
 \begin{list1}
-	\item
-	\begin{list2}
-		\item Sega system on Xilinx Vertex FPGA; translated Z80 instructions into RISC $\mu$ops\footnote{\href{https://github.com/danluu/sega-system-for-fpga}{https://github.com/danluu/sega-system-for-fpga}}  \hfill \emph{Verilog and VHDL}
-		\item S-99: Ninety-Nine Scala Problems\footnote{\href{https://github.com/danluu/ninety-nine-scala-problems}
-{https://github.com/danluu/ninety-nine-scala-problems}} \hfill \emph{Scala with JUnit}
-		\item Formal verification of a secure hypervisor \footnote{\href{https://github.com/danluu/secvisor-formal-verification}{https://github.com/danluu/secvisor-formal-verification}} \hfill \emph{ACL2}
-		\item Project Euler\footnote{\href{https://github.com/danluu/Project-Euler}{https://github.com/danluu/Project-Euler}} \hfill \emph{F\# and bluespec}
+\item
+  \begin{list2}
+  \item Sega system on Xilinx Vertex FPGA; translated Z80 instructions into RISC $\mu$ops\footnote{\href{https://github.com/danluu/sega-system-for-fpga}{https://github.com/danluu/sega-system-for-fpga}}  \hfill \emph{Verilog and VHDL}
+  \item S-99: Ninety-Nine Scala Problems\footnote{\href{https://github.com/danluu/ninety-nine-scala-problems}
+    {https://github.com/danluu/ninety-nine-scala-problems}} \hfill \emph{Scala with JUnit}
+  \item Formal verification of a secure hypervisor \footnote{\href{https://github.com/danluu/secvisor-formal-verification}{https://github.com/danluu/secvisor-formal-verification}} \hfill \emph{ACL2}
+  \item Project Euler\footnote{\href{https://github.com/danluu/Project-Euler}{https://github.com/danluu/Project-Euler}} \hfill \emph{F\# and bluespec}
 
 
-	\end{list2}
+  \end{list2}
 \end{list1}
 
 
@@ -267,16 +268,16 @@
 \section*{Honors and Awards}
 %\vspace{-3pt}
 \begin{list1}
-	\item
-	\begin{list2}
-		\item MCD Fellowship \hfill 2009 - 2010
-		\item Burton D. Morgan Entrepreneurship Competition Semi-Finalist \hfill 2005
-		\item David Ross Fellowship (five years of guaranteed funding) \hfill 2003 - 2005
-		\item SRC undergraduate research grant \hfill 2001 - 2003
-		\item Dean's List \hfill 2001 - 2003
-		\item VIGRE undergraduate research funding \hfill 2001
-		\item AP Scholar with distinction \hfill 2000
-	\end{list2}
+\item
+  \begin{list2}
+  \item MCD Fellowship \hfill 2009 - 2010
+  \item Burton D. Morgan Entrepreneurship Competition Semi-Finalist \hfill 2005
+  \item David Ross Fellowship (five years of guaranteed funding) \hfill 2003 - 2005
+  \item SRC undergraduate research grant \hfill 2001 - 2003
+  \item Dean's List \hfill 2001 - 2003
+  \item VIGRE undergraduate research funding \hfill 2001
+  \item AP Scholar with distinction \hfill 2000
+  \end{list2}
 \end{list1}
 
 %\begin{comment}
@@ -284,13 +285,13 @@
 \section*{Miscellaneous}
 %\vspace{-3pt}
 \begin{list1}
-	\item
-	\begin{list2}
-		\item Languages: English mother tongue. Once-fluent Vietnamese. Once-functional (now moribund) Japanese and French. Willing (and eager) to learn any language
-		%\item \coltabone{PL}{Once-fluent (now rusty) Ruby. Once-functional (now moribund) x86, ACL2, C, C++, Verilog, and VHDL. Willing (and eager to) learn any language}
-%		\item Activities: Officer and organizer for Students in Software Engineering; member of ARG climbing team, UT climbing team, and occasional antendee of UT sciences Toastmasters club
-		\item Work Authorization: U.S. Citizen
-	\end{list2}
+\item
+  \begin{list2}
+  \item Languages: English mother tongue. Once-fluent Vietnamese. Once-functional (now moribund) Japanese and French. Willing (and eager) to learn any language
+    %\item \coltabone{PL}{Once-fluent (now rusty) Ruby. Once-functional (now moribund) x86, ACL2, C, C++, Verilog, and VHDL. Willing (and eager to) learn any language}
+    %		\item Activities: Officer and organizer for Students in Software Engineering; member of ARG climbing team, UT climbing team, and occasional antendee of UT sciences Toastmasters club
+  \item Work Authorization: U.S. Citizen
+  \end{list2}
 \end{list1}
 %\end{comment}
 \end{document}
