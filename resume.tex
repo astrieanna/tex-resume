@@ -1,15 +1,22 @@
 \documentclass[letterpaper]{scrartcl}
 \usepackage{nicefrac}
 \usepackage{plainresume3}
-\usepackage{verbatim}
-\usepackage{setspace}
-\usepackage{multicol}
-\usepackage{ifthen}
-\usepackage{changepage}
-\usepackage{fontspec} 
+% \usepackage{verbatim}
+% \usepackage{setspace}
+% \usepackage{multicol}
+\usepackage{changepage} % used for adjustwidth. Not required if those are removed
 \pagestyle{plain}
 %\author{Dan Luu}
-\addfontfeature{hlig}
+
+% Crazy font things
+% \usepackage{fontspec} 
+% \addfontfeature{hlig}
+% \defaultfontfeatures{Mapping=tex-text}
+%FIXME: should use bigger front to consume empty space and make things more readable
+%\setromanfont [Ligatures={Historical}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+%\setromanfont [Ligatures={Common,Rare,Historic}, Numbers={OldStyle}, Alternate=1]{Hoefler Text}
+%\setmonofont[Scale=0.8]{Monaco}
+
 \begin{document}
 %\title{Dan Luu}
 \title{\vspace{-6ex}\tt{dan.luu@gmail.com\footnote{408-256-1284}}}
@@ -17,42 +24,7 @@
 \author{}
 \maketitle
 
-% FONTS
-%FIXME: should use bigger front to consume empty space and make things more readable
-\defaultfontfeatures{Mapping=tex-text}
-%\setromanfont [Ligatures={Historical}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
-%\setromanfont [Ligatures={Common,Rare,Historic}, Numbers={OldStyle}, Alternate=1]{Hoefler Text}
-%\setmonofont[Scale=0.8]{Monaco}
-
-
-\def\myaddress{office}
-%\def\myaddress{home}
-
-\ifthenelse{\equal{\myaddress}{office}}{%
-  \address{Lorem Ipsum Dolor APT sit
-    Austin, TX 12345.}
-}{%
-  \address{Foo Bar Madison, WI 53718}
-}
-
-%\phone{(555) 555-5555}
-%\fax{(555) 555-5555}
-%\email{elit.sed@do.eiusmod} 
-%\homepage{\href{http://tempor.incididunt.ut.labore/et/dolore}
-%{http://tempor.incididunt.ut.labore/et/dolore}}
-
-\ifthenelse{\equal{\myaddress}{office}}{%
-  %  \address{3500 Greystone Dr APT 204
-  \address{7600-C N. Capital of Tx Hwy STE 300
-    Austin, TX 78731}
-}{%
-  \address{blahblahblah}
-}
-
-%\phone{(408) 256-1284}
-%\fax{(512) 471-3621}
 \email{danluu@gmail.com} 
-%\homepage{\href{http://cs.utexas.edu/~luu}{http://cs.utexas.edu/~luu}}
 %\footnotesize
 %\setstretch{.9}
 %
