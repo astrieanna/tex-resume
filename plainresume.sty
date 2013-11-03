@@ -1,0 +1,200 @@
+%% Filename: plainresume.sty
+%% Created by Aravind Sundaresan (aravinds@cfar.umd.edu)
+%% Date: 12/10/2003
+\NeedsTeXFormat{LaTeX2e}[1996/06/01]
+\ProvidesPackage{plainresume}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{calc}
+\usepackage{enumerate}
+
+\def\@ptsizenine{9}
+\def\@ptsizeten{10}
+\def\@ptsizeeleven{11}
+\def\@ptsizetwelve{12}
+
+\typeout{-- This is a 9 point document.}
+\def\normalsize{\fontsize{9}{11.0476pt}\selectfont%
+\abovedisplayskip 1.5ex plus3pt minus1pt%
+\belowdisplayskip \abovedisplayskip%
+\abovedisplayshortskip 0pt plus3pt%
+\belowdisplayshortskip 1.5ex plus3pt minus1pt}
+\def\small{\fontsize{8}{10pt}\selectfont}
+\def\footnotesize{\fontsize{8}{9pt}\selectfont}
+\def\scriptsize{\fontsize{7}{8pt}\selectfont}
+\def\tiny{\fontsize{5}{6pt}\selectfont}
+% sublargesize is the same as large - 10pt
+
+\newcommand{\comment}[1]{ {} }
+
+% note : 1pt = 0.351mm
+% set margins
+
+% plain resume offset values
+\newlength{\voffsethead}
+\newlength{\voffsetfoot}
+\newlength{\hoffsetleft}
+\newlength{\hoffsetright}
+
+\setlength{\voffsethead}{0.7in}
+\setlength{\voffsetfoot}{0.7in}
+\setlength{\hoffsetleft}{0.9in}
+\setlength{\hoffsetright}{1.0in}
+
+\setlength{\voffset}{\voffsethead}
+\addtolength{\voffset}{-1in}
+\setlength{\hoffset}{\hoffsetleft}
+\addtolength{\hoffset}{-1in}
+
+% set header spaces
+\setlength{\topmargin}{0in}
+\setlength{\headheight}{22pt}
+\setlength{\headsep}{12pt}
+
+% set footer spaces
+\setlength{\footskip}{11pt}
+
+% set margins
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+
+% set textwidth 
+\setlength{\textwidth}{\paperwidth}
+\addtolength{\textwidth}{-\hoffsetleft}
+\addtolength{\textwidth}{-\hoffsetright}
+
+% set textheight
+\setlength{\textheight}{\paperheight}
+\addtolength{\textheight}{-\voffsethead}
+\addtolength{\textheight}{-\voffsetfoot}
+\addtolength{\textheight}{-\headheight}
+\addtolength{\textheight}{-\headsep}
+\addtolength{\textheight}{-\footskip}
+
+% set global spacing
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{2pt plus 0.5pt minus 0.5pt}
+
+\def\minipar{{\par}}
+
+% set list environment spacing
+
+% text <-> item 1 : \topsep+\parskip+\partopsep = 1pt
+\newlength{\listtopsep}			% local - set to 1pt
+\setlength{\listtopsep}{-\parskip}
+\addtolength{\listtopsep}{1pt}
+
+\setlength{\partopsep}{0pt}		% global (for 2 levels)
+
+% item 1 <-> item 2 : \itemsep+\parsep = 1pt + 1pt = 2pt
+
+\newlength{\listitemsep}
+\setlength{\listitemsep}{1pt}
+
+\newlength{\listparsep}
+\setlength{\listparsep}{1pt}
+
+% set list environment spacing
+
+\newlength{\tabwidth}
+\addtolength{\tabwidth}{\textwidth}
+\typeout{\tabwidth}
+
+% title headers
+\newcommand{\address}[1]{\def\TitleAddress{#1}}
+\newcommand{\email}[1]{\def\TitleEmail{#1}}
+\newcommand{\homepage}[1]{\def\TitleURL{#1}}
+\newcommand{\phone}[1]{\def\TitlePhone{#1}}
+\newcommand{\fax}[1]{\def\TitleFax{#1}}
+
+\renewcommand{\maketitle}{%
+\begin{center}%
+  {{\TitleAddress}\\ 
+  {{Tel:} \TitlePhone} \makebox[6mm][c]{\raisebox{0.1em}[0pt]{$\bullet$}}
+   {{Fax:} \TitleFax} \\
+   {{Email:} \href{mailto:\TitleEmail}{\TitleEmail}} \makebox[6mm][c]{\raisebox{0.1em}[0pt]{$\bullet$}}
+   {{Homepage:} {\TitleURL}}\\
+  }
+  {\rule{\linewidth}{0.2mm}} %
+\end{center}%
+}
+
+\renewcommand{\section}{%
+    \@startsection {section}{1}{0pt}{-8pt plus -3pt minus -1pt}
+                   {4pt plus 1pt}{\scshape\normalsize\MakeUppercase}
+}
+
+% new environments
+
+\setlength{\listparsep}{2pt plus 0.5pt minus 0.5pt}
+\setlength{\listparsep}{\parsep}
+\newenvironment{list1}
+{\begin{list}{}{
+    \setlength{\rightmargin}{0pt}
+    \setlength{\leftmargin}{12pt}
+    \setlength{\itemsep}{\listitemsep}
+    \setlength{\topsep}{\listtopsep}
+    \setlength{\parsep}{\listparsep}
+    \addtolength{\tabwidth}{-\leftmargin}
+}}{\end{list}}
+
+\newenvironment{list2}
+{\begin{list}{$\diamond$}{
+    \setlength{\rightmargin}{0pt}
+    \setlength{\leftmargin}{0pt}
+    \setlength{\labelwidth}{8pt}
+    \addtolength{\leftmargin}{\labelwidth}
+    \addtolength{\leftmargin}{\labelsep}
+    \setlength{\labelwidth}{8pt}
+    \setlength{\itemsep}{0pt}
+    \setlength{\topsep}{\listtopsep}
+    \addtolength{\tabwidth}{-\leftmargin}
+}}{\end{list}}
+
+\newenvironment{enumerate1}
+{\begin{list}{}{
+    \setlength{\rightmargin}{0pt}
+    \setlength{\leftmargin}{4pt}
+    \setlength{\itemsep}{\listitemsep}
+    \setlength{\topsep}{\listtopsep}
+    \setlength{\parsep}{\listparsep}
+    \addtolength{\tabwidth}{-\leftmargin}
+}}{\end{list}}
+
+\newenvironment{enumerate2}
+{\begin{enumerate}[{[}1{]}]
+    \setlength{\rightmargin}{0pt}
+    \setlength{\leftmargin}{0pt}
+    \setlength{\labelwidth}{8pt}
+    \addtolength{\leftmargin}{\labelwidth}
+    \addtolength{\leftmargin}{\labelsep}
+    \setlength{\topsep}{\listtopsep}
+    \addtolength{\tabwidth}{-\leftmargin}
+    \setlength{\itemsep}{0pt}
+}{\end{enumerate}}
+
+\newenvironment{tabular1bold}{%
+\setlength{\arrayrulewidth}{0.1\arrayrulewidth}\bfseries
+\begin{tabular*}{\tabwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
+}{\end{tabular*}}
+
+\newenvironment{tabular1}{%
+\setlength{\arrayrulewidth}{0.1\arrayrulewidth}
+\begin{tabular*}{\tabwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
+}{\end{tabular*}}
+
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\thispagestyle{plain}
+
+\lhead[\fancyplain{}{}]       {\fancyplain{}{}}
+\chead[\fancyplain{}{}]       {\fancyplain{\Large{\sc \@title}}{\sc \@title}}
+\rhead[\fancyplain{}{}]       {\fancyplain{}{\thepage}}
+\lfoot[\fancyplain{}{}]       {\fancyplain{}{}}
+\cfoot[\fancyplain{}{}]       {\fancyplain{}{}}
+\rfoot[\fancyplain{}{}]       {\fancyplain{}{}}
+
+\flushbottom
+
