@@ -103,19 +103,17 @@
 \typeout{\tabwidth}
 
 % title headers
-\newcommand{\address}[1]{\def\TitleAddress{#1}}
 \newcommand{\email}[1]{\def\TitleEmail{#1}}
-\newcommand{\homepage}[1]{\def\TitleURL{#1}}
-\newcommand{\phone}[1]{\def\TitlePhone{#1}}
-\newcommand{\fax}[1]{\def\TitleFax{#1}}
+\newcommand{\homepage}[2]{\def\TitleURL{\href{#2}{#1}}}
+\newcommand{\github}[2]{\def\TitleGithub{\href{#2}{#1}}}
+\newcommand{\bitbucket}[2]{\def\TitleBitbucket{\href{#2}{#1}}}
 
 \renewcommand{\maketitle}{%
 \begin{center}%
-  {{\TitleAddress}\\ 
-  {{Tel:} \TitlePhone} \makebox[6mm][c]{\raisebox{0.1em}[0pt]{$\bullet$}}
-   {{Fax:} \TitleFax} \\
-   {{Email:} \href{mailto:\TitleEmail}{\TitleEmail}} \makebox[6mm][c]{\raisebox{0.1em}[0pt]{$\bullet$}}
-   {{Homepage:} {\TitleURL}}\\
+  {\href{mailto:\TitleEmail}{\TitleEmail}} \makebox[6mm][c]{\raisebox{0.1em}[0pt]{$\bullet$}}
+  {{\TitleURL} \makebox[6mm][c]{\raisebox{0.1em}[0pt]{$\bullet$}}
+  {\TitleGithub} \makebox[6mm][c]{\raisebox{0.1em}[0pt]{$\bullet$}}
+  {\TitleBitbucket} \\
   }
   {\rule{\linewidth}{0.2mm}} %
 \end{center}%
