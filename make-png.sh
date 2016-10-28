@@ -1,3 +1,3 @@
 #!/bin/sh
 
-convert -density 576 resume.pdf resume.png
+convert resume.pdf -density 576 resume%d.png
